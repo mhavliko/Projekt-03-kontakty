@@ -8,3 +8,79 @@ body {
 }
 
 /* ---------------------------------------------------- */
+
+.kontakty {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.kontakt img {
+  border-radius: 50%;
+}
+
+.kontakt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  border-style: solid;
+  border-color: lightgray;
+  border-radius: 3%;
+  border-width: 2px;
+  margin: 10px;
+  flex-basis: 85%;
+  padding: 15px;
+}
+
+.kontakt p {
+  margin: 0;
+}
+
+.foto {
+  margin-bottom: 0;
+}
+
+h1 {
+  text-align: center;
+}
+
+h2 {
+  font-size: 18px;
+}
+
+@media screen and (min-width: 960px) {
+  .kontakt {
+    flex-basis: 22%;
+    max-width: 400px;
+  }
+}
+
+@media screen and (min-width: 540px) and (max-width: 960px) {
+ .kontakt {
+    flex-basis: 45%;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    text-align: left;
+    align-items: flex-start;
+  }
+  .text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding-left: 15px;
+  }
+  .foto img {
+    padding: 5px;
+    width: 96px;
+  }
+
+  body {
+    font-size: 12px;
+  }
+
+  h2 {
+    font-size: 15px;
+  }
+}
+
